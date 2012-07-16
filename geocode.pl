@@ -1,3 +1,4 @@
+# Batch geocode using the Google Maps API
 use Google::GeoCoder::Smart;
 use Time::localtime;
 $geo = Google::GeoCoder::Smart->new();
