@@ -21,13 +21,10 @@ while(<ADDFILE>){
 	$lng = $results[0]{geometry}{location}{lng};
 		
 	if($lat && $lng) {
-	# printing to result file
 	print RESFILE "$id,$add,$city,$state,$zip,$lat,$lng\n";
-	#print $counter."\n";	
 	}
 	else
 	{ print RESFILE "$id,$add,$city,$state,$zip,ERR,$error\n"; 
-	  #print $counter."$error Error!\n";
 	}
 	$counter++;
 	sleep(2);
